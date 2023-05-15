@@ -1,13 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import NavBar from "./components/NavBar";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contacts from "./pages/Contacts";
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <BrowserRouter>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Contacts />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

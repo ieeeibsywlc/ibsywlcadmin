@@ -1,0 +1,57 @@
+#contactsDataSection {
+  padding: 4rem;
+}
+
+#contactsDataSection h1 {
+  font-size: 2rem;
+  font-family: "Sapce Grotesk", sans-serif;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#contactsDataSection .contactDataList {
+  background-color: #00669e;
+  color: #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#contactsDataSection .contactDataList:last-child {
+  margin-bottom: 0;
+}
+
+#contactsDataSection .contactDataList h2 {
+  margin-bottom: 0.8rem;
+}
+
+#contactsDataSection .contactDataList a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+}
+
+/* Laptop Size < 800px */
+
+@media screen and (max-width: 800px) {
+  #contactsDataSection {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Tablet Size < 425px */
+
+@media screen and (max-width: 425px) {
+  #contactsDataSection {
+    padding: 2.6rem 1.4rem;
+  }
+
+  #contactsDataSection h1 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+}
