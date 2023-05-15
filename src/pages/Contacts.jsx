@@ -21,7 +21,7 @@ const Contacts = () => {
   useEffect(() => {
     getData();
     // console.log(contactsData);
-  }, [contactdata]);
+  }, []);
 
   return (
     <div id="contactsDataSection">
